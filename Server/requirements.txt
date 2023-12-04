@@ -1,0 +1,8 @@
+pandas
+cmake
+numpy
+flask
+gspread
+oauth2client
+firebase_admin
+gunicorn
