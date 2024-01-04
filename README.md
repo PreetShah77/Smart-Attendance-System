@@ -75,6 +75,4 @@ Before getting started, ensure you have the following:
    - Navigate to the compare face UI in your web browser.
    - Login, and then either train the dataset or compare faces.
 
-5. **DB-GPT Server for LLM**:
-   - Start the `db-gpt` server. This will allow the Language Model to communicate with your database.
-   - Ensure your database is uploaded and properly configured with the server.
+
