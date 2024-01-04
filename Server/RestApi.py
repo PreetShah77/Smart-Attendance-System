@@ -131,9 +131,10 @@ def add_manual_entry(docker_response,state,duration_recognition):
     # data = request.get_json()
     # docker_response = data.get("result", [])
     arr=[]
+    str2=""
     for item in docker_response.get("result", []):
         subjects = item.get("subjects", [])
-        str2=""
+        
         for subject in subjects:
             similarity = subject.get("similarity", 0)
             Emp_id = subject.get("subject")
@@ -142,7 +143,7 @@ def add_manual_entry(docker_response,state,duration_recognition):
 
 
             # Check the similarity threshold and proceed
-            if similarity > 0.90:
+            if similarity > 0.80:
                 # Fetch employee details from Firebase based on emp_id
                 # emp_data = db.collection("Hack").document(Emp_id).get().to_dict()
                 emp_data_query = db.collection("Hack").where('Emp_id', '==', Emp_id).get()
@@ -167,7 +168,7 @@ def add_manual_entry(docker_response,state,duration_recognition):
                 # You might want to extract other details if they exist.
                 print(name, department)
                 # Append these details to Google Sheet
-                attendance_sheet2 = gc.open_by_url('https://docs.google.com/spreadsheets/d/1lusBMa4HwoKbBezyfADTyB7adgeq1HNJU9FbKWZIvhs/edit#gid=0')
+                attendance_sheet2 = gc.open_by_url('https://docs.google.com/spreadsheets/d/1lusBMa4HwoKbBezyfADTyB7adgeq1HNJU9FbKWZIvhs/edit?pli=1#gid=0')
                 attendance_sheet = attendance_sheet2.get_worksheet(0)
 
                 # Finding the next empty row. Adjust this logic if your sheet contains headers.
