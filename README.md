@@ -29,7 +29,7 @@ Before getting started, ensure you have the following:
 
 2. **Docker Environment**:
    - Install Docker from the official [Docker website](https://www.docker.com/).
-   - Create an environment to run the face comparison API.
+   - Create an environment to run the face comparison API
 
 3. **React App Dependencies**:
    - Navigate to the React app folder and install its requirements:
