@@ -1,6 +1,6 @@
 # Smart Attendance System
 
-The Smart Attendance System is an innovative solution to manage attendance using advanced technologies including face comparison, database querying with Language Models, and more. This repository will guide you through the setup and execution process.
+The Smart Attendance System is an innovative solution to manage attendance using advanced technologies including face comparison, database querying with Language Models, and more. This repository will guide you throughout the setup and execution process.
 
 ## Table of Contents
 - [Installation](#installation)
